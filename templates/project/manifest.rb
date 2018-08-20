@@ -1,9 +1,9 @@
-description 'Bootstrap for Sass'
+description 'Common files for DBX project'
 
 # Stylesheet importing bootstrap
 stylesheet 'styles.sass'
 
-# Bootstrap variable overrides file
+# variable overrides file
 stylesheet '_common-variables.sass', :to => '_common-variables.sass'
 
 # Copy JS and fonts

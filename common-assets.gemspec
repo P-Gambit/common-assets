@@ -4,7 +4,7 @@ require 'common-assets/version'
 
 Gem::Specification.new do |s|
   s.name     = 'common-assets'
-  s.version  = Bootstrap::VERSION
+  s.version  = CommonAssets::VERSION
   s.authors  = ['JoeWallCrypt0']
   s.email    = 'hericrypto@protonmail.com'
   s.summary  = 'common-assets has all the design assets, ready to drop right into your yugentrade rails applications.'
