@@ -11,7 +11,7 @@ Please see the appropriate guide for your environment of choice:
 In your Gemfile you need to add the `common-assets` gem, and ensure that the `sass-rails` gem is present - it is added to new Rails applications by default.
 
 ```ruby
-gem 'common-assets', '>= 0.0.1'
+gem 'common-assets', github: 'P-Gambit/common-assets'
 ```
 
 `bundle install` and restart your server to make the files available through the pipeline.
