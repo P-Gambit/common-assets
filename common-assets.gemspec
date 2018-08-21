@@ -1,6 +1,6 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'common-assets/version'
+require 'common_assets/version'
 
 Gem::Specification.new do |s|
   s.name     = 'common-assets'
