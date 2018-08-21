@@ -5,8 +5,6 @@ module CommonAssets
 
     skip_before_action :authenticate_user!, raise: false
     
-    helper Rails.application.routes.url_helpers
-
     layout :layout
 
     def show
