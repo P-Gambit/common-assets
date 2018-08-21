@@ -1,7 +1,7 @@
 {
-  "name": "common-assets",
+  "name": "common_assets",
   "version": "0.0.1",
-  "description": "common-assets has all the design assets, ready to drop right into your yugentrade rails applications.",
+  "description": "common_assets has all the design assets, ready to drop right into your yugentrade rails applications.",
   "main": "assets/javascripts/common.js",
   "style": "assets/stylesheets/_common.scss",
   "sass": "assets/stylesheets/_common.scss",
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/P-Gambit/common-assets"
+    "url": "git://github.com/P-Gambit/common_assets"
   },
   "keywords": ["assets", "css", "stylesheets", "javascript", "ui"],
   "contributors": [
@@ -22,7 +22,7 @@
   ],
   "license": "No License",
   "bugs": {
-    "url": "https://github.com/P-Gambit/common-assets/issues"
+    "url": "https://github.com/P-Gambit/common_assets/issues"
   },
   "devDependencies": {
     "node-sass": "^3.8.0"

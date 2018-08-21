@@ -3,12 +3,12 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'common_assets/version'
 
 Gem::Specification.new do |s|
-  s.name     = 'common-assets'
+  s.name     = 'common_assets'
   s.version  = CommonAssets::VERSION
   s.authors  = ['JoeWallCrypt0']
   s.email    = 'hericrypto@protonmail.com'
-  s.summary  = 'common-assets has all the design assets, ready to drop right into your yugentrade rails applications.'
-  s.homepage = 'https://github.com/P-Gambit/common-assets'
+  s.summary  = 'common_assets has all the design assets, ready to drop right into your yugentrade rails applications.'
+  s.homepage = 'https://github.com/P-Gambit/common_assets'
   s.license  = 'No License'
 
   s.add_runtime_dependency 'sass', '>= 3.3.4'
