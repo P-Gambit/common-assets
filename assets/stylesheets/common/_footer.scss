@@ -1,0 +1,47 @@
+.footer {
+	padding: 10px 15px;
+	a {
+		color: grey;
+	}
+	ul {
+		&.links-foot {
+			float: left;
+			padding-left: 0;
+			li {
+				list-style: none;
+				float: left;
+				padding-right: 10px;
+				font-size: 12px;
+				a {
+					padding-right: 10px;
+				}
+			}
+		}
+		&.social-foot {
+			li {
+				list-style: none;
+				float: right;
+				padding-left: 10px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.footer {
+		ul {
+			padding: 0;
+			&.links-foot, &.social-foot {
+				width: 100%;
+				text-align: center;
+				float: none;
+				margin-bottom: 20px;
+				li {
+					float: none;
+					display: inline;
+					padding: 0 10px;
+				}
+			}
+		}
+	}
+}

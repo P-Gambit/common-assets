@@ -1,6 +1,8 @@
 /*!
  * Common v0.0.1
  * Copyright 2018- YugenTrade, Inc.
+ * When updating this Gem, increment the version number
+ * in /common-assets/version.rb
  */
 
 
@@ -9,3 +11,7 @@
 
 // Reset and dependencies
 @import "common/icons";
+
+
+@import "common/header";
+@import "common/footer";
