@@ -8,7 +8,7 @@ module CommonAssets
     layout :layout
 
     def show
-      render action: params[:code].to_s
+      render action: params[:status].to_s
     end
 
   end
