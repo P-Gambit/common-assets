@@ -1,4 +1,4 @@
-module Common
+module CommonAssets
   module Rails
     class Engine < ::Rails::Engine
       initializer 'common_assets.assets.precompile' do |app|
@@ -12,6 +12,12 @@ module Common
           app.config.assets.precompile << %r(iconfont\.(?:eot|svg|ttf|woff?)$)
         end
       end
+
+
+      initializer :common_assets do |app|
+        app.config.exceptions_app = ->(env) { CommonAssets::ExceptionsController.action(:show).call(env) }
+      end
+
     end
   end
 end
