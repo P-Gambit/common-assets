@@ -5,10 +5,10 @@ module CommonAssets
 
     skip_before_action :authenticate_user!, raise: false
     
-    layout :layout
+    # layout :layout
 
     def show
-      render action: params[:status].to_s
+      render params[:status].to_s, layout: false
     end
 
   end
