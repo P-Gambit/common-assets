@@ -1,5 +1,5 @@
 {
-    "name": "common-assets",
-    "description": "common-assets has all the design assets, ready to drop right into your yugentrade rails applications.",
+    "name": "common_assets",
+    "description": "common_assets has all the design assets, ready to drop right into your yugentrade rails applications.",
     "tags": ["assets", "css", "stylesheets", "javascript", "ui"]
 }

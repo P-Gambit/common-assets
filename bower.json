@@ -1,11 +1,11 @@
 {
-  "name": "common-assets",
+  "name": "common_assets",
   "homepage": "https://github.com/P-Gambit/common-assets",
   "authors": [
     "JoeWallCrypt0",
     "Jackson200"
   ],
-  "description": "common-assets has all the design assets, ready to drop right into your yugentrade rails applications.",
+  "description": "common_assets has all the design assets, ready to drop right into your yugentrade rails applications.",
   "moduleType": "globals",
   "main": [
     "assets/stylesheets/_common.scss",

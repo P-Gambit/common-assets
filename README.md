@@ -6,12 +6,12 @@ Please see the appropriate guide for your environment of choice:
 
 ### a. Ruby on Rails
 
-`common-assets` is easy to drop into Rails with the asset pipeline.
+`common_assets` is easy to drop into Rails with the asset pipeline.
 
-In your Gemfile you need to add the `common-assets` gem, and ensure that the `sass-rails` gem is present - it is added to new Rails applications by default.
+In your Gemfile you need to add the `common_assets` gem, and ensure that the `sass-rails` gem is present - it is added to new Rails applications by default.
 
 ```ruby
-gem 'common-assets', github: 'P-Gambit/common-assets'
+gem 'common_assets', github: 'P-Gambit/common_assets'
 ```
 
 `bundle install` and restart your server to make the files available through the pipeline.
@@ -19,7 +19,6 @@ gem 'common-assets', github: 'P-Gambit/common-assets'
 Import styles in `app/assets/stylesheets/application.scss`:
 
 ```scss
-@import "common-sprockets";
 @import "common";
 ```
 

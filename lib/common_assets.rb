@@ -1,4 +1,4 @@
-require 'common-assets/version'
+require 'common_assets/version'
 module CommonAssets
   class << self
     # Inspired by Kaminari
@@ -55,7 +55,7 @@ module CommonAssets
     end
 
     def register_rails_engine
-      require 'common-assets/engine'
+      require 'common_assets/engine'
     end
 
     def register_sprockets
