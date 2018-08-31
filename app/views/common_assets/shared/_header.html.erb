@@ -1,11 +1,11 @@
 
 
 <nav class="navbar navbar-expand-md fixed-top">
-    <a class="navbar-brand" href="https://dbx-core.digibitx.com/">
+    <a class="navbar-brand" href="<%= ENV['CORE_DOMAIN'] %>">
         <i class="icon-ygt-logo"></i>
         <span>YugenTrade</span>
     </a>
-    <a class="trade" href="https://dbx-core.digibitx.com/trading/bchbtc">Trade</a>
+    <a class="trade" href="<%= ENV['CORE_DOMAIN'] %>/trading/bchbtc">Trade</a>
 
     <div id="ygn-nav">
         <i class="icon-menu float-right" aria-controls="ygn-nav" aria-expanded="false" aria-label="Toggle navigation"></i>
@@ -14,7 +14,7 @@
             <ul class="navbar-nav ml-auto">
 
                 <li class="pages nav-item order-1">
-                    <a class="nav-link" href=" https://support.digibitx.com/"><i class="icon-lifebuoy"></i><span class="translation_missing" title="translation missing: en.layouts.application.support">Support</span></a>
+                    <a class="nav-link" href="<%= ENV['CMS_DOMAIN'] %>/pages/support"><i class="icon-lifebuoy"></i><span class="translation_missing" title="translation missing: en.layouts.application.support">Support</span></a>
                 </li>
                 <li id="language" class="nav-item dropdown order-2">
 
