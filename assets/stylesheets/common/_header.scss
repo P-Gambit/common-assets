@@ -141,6 +141,25 @@ $menu-bgcolor: #24292d;
 				}
 			}
 		}
+		p.navbar-text {
+			margin: 5px 10px 5px 5px;
+			padding: 0;
+			.btn {
+				display: inline-block;
+				margin-bottom: 0;
+				font-weight: normal;
+				text-align: center;
+				vertical-align: middle;
+				cursor: pointer;
+				background-image: none;
+				border: 1px solid transparent;
+				white-space: nowrap;
+				padding: 6px 12px;
+				font-size: 14px;
+				line-height: 1.428571429;
+				border-radius: 2px
+			}
+		}
 	}
 
 

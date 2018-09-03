@@ -1,59 +1,67 @@
 
 
 <nav class="navbar navbar-expand-md fixed-top">
-    <a class="navbar-brand" href="<%= ENV['CORE_DOMAIN'] %>">
-        <i class="icon-ygt-logo"></i>
-        <span>YugenTrade</span>
-    </a>
-    <a class="trade" href="<%= ENV['CORE_DOMAIN'] %>/trading/bchbtc">Trade</a>
+	<a class="navbar-brand" href="<%= ENV['CORE_DOMAIN'] %>">
+		<i class="icon-ygt-logo"></i>
+		<span>YugenTrade</span>
+	</a>
+	<a class="trade" href="<%= ENV['TRADING_DOMAIN'] %>/trading/bchbtc">Trade</a>
 
-    <div id="ygn-nav">
-        <i class="icon-menu float-right" aria-controls="ygn-nav" aria-expanded="false" aria-label="Toggle navigation"></i>
-        <div class="main-menu panel panel-default scroll">
-            <span class="icon-close"></span>
-            <ul class="navbar-nav ml-auto">
+	<div id="ygn-nav">
+		<i class="icon-menu float-right" aria-controls="ygn-nav" aria-expanded="false" aria-label="Toggle navigation"></i>
+		<div class="main-menu panel panel-default scroll float-left">
+			<span class="icon-close"></span>
+			<ul class="navbar-nav ml-auto">
 
-                <li class="pages nav-item order-1">
-                    <a class="nav-link" href="<%= ENV['CMS_DOMAIN'] %>/pages/support"><i class="icon-lifebuoy"></i><span class="translation_missing" title="translation missing: en.layouts.application.support">Support</span></a>
-                </li>
-                <li id="language" class="nav-item dropdown order-2">
+				<li class="pages nav-item order-1">
+					<a class="nav-link" href="<%= ENV['CMS_DOMAIN'] %>/pages/support"><i class="icon-lifebuoy"></i><span class="translation_missing" title="translation missing: en.layouts.application.support">Support</span></a>
+				</li>
+				<li id="language" class="nav-item dropdown order-2">
 
-                    <a class="nav-link dropdown-toggle" href="#" id="language-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="icon-earth"></i>en
-                        <i class="icon-chevron-down"></i>
-                    </a>
+					<a class="nav-link dropdown-toggle" href="#" id="language-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="icon-earth"></i>en
+						<i class="icon-chevron-down"></i>
+					</a>
 
-                    <ul class="dropdown-menu" aria-labelledby="language-dropdown">
-                        <a class="dropdown-item" href="?lang=en">
-                            en
-                        </a>
-                    </ul>
+					<ul class="dropdown-menu" aria-labelledby="language-dropdown">
+						<a class="dropdown-item" href="?lang=en">
+							en
+						</a>
+					</ul>
 
-                </li>
+				</li>
 
-            </ul>
-        </div>
-    </div><div class="menu_mask d-none"></div>
+			</ul>
+		</div>
+
+		<!-- IF !CURRENT_USER -->
+			<p class="navbar-text float-left d-none d-md-block">
+				<a href="/auth/barong"><button class="btn btn-danger">Register</button></a>
+				<a href="/auth/barong"><button class="btn btn-success">Sign In</button></a>
+			</p>
+		<!-- END --------------->
+
+	</div><div class="menu_mask d-none"></div>
 </nav>
 
 
 
 <script>
 
-    var main = function() {
-        $('.icon-menu').click(function() {
-            $('.main-menu').animate({right:'0px'}, 200);
-            $('.menu_mask').animate({opacity:1}, 350).removeClass('d-none');
-            $('.navbar-account').removeClass('menu-closed').addClass('menu-open');
-        });
-        $('.icon-close').click(function() {
-            $('.main-menu').animate({right:'-285px'}, 200);
-            $('.menu_mask').animate({opacity:0}, 200).addClass('d-none');
-            $('.navbar-account').removeClass('menu-open').addClass('menu-closed');
-        });
+	var main = function() {
+		$('.icon-menu').click(function() {
+			$('.main-menu').animate({right:'0px'}, 200);
+			$('.menu_mask').animate({opacity:1}, 350).removeClass('d-none');
+			$('.navbar-account').removeClass('menu-closed').addClass('menu-open');
+		});
+		$('.icon-close').click(function() {
+			$('.main-menu').animate({right:'-285px'}, 200);
+			$('.menu_mask').animate({opacity:0}, 200).addClass('d-none');
+			$('.navbar-account').removeClass('menu-open').addClass('menu-closed');
+		});
 
-    };
+	};
 
-    $(document).ready(main);
+	$(document).ready(main);
 
 </script>
