@@ -1,47 +1,57 @@
 .footer {
-	padding: 10px 15px;
-	a {
-		color: grey;
+	background: rgba(0, 0, 0, 0.77);
+	color: #fff;;
+	padding: 20px 15px 10px;
+	border-top: solid 1px #17a2b8;
+	.icon-ygt-logo {
+		color: $brand-highlight;
+	}
+	a:hover {
+		color: white;
 	}
 	ul {
-		&.links-foot {
-			float: left;
-			padding-left: 0;
-			li {
-				list-style: none;
-				float: left;
-				padding-right: 10px;
-				font-size: 12px;
-				a {
-					padding-right: 10px;
-				}
-			}
+		.title {
+			margin-bottom: 5px;
+			display: block;
 		}
 		&.social-foot {
 			li {
 				list-style: none;
 				float: right;
-				padding-left: 10px;
-			}
-		}
-	}
-}
-
-@include media-breakpoint-down(sm) {
-	.footer {
-		ul {
-			padding: 0;
-			&.links-foot, &.social-foot {
-				width: 100%;
-				text-align: center;
-				float: none;
-				margin-bottom: 20px;
-				li {
+				margin-top: 5px;
+				&.title {
+					float: none;
+					display: block;
+					margin-top: 0px;
+				}
+				.fa {
+					font-size: 1.75em;
+					margin-left: 10px;
+				}
+				@include media-breakpoint-down(sm) {
 					float: none;
 					display: inline;
-					padding: 0 10px;
+					.fa {
+						font-size: 1.75em;
+						margin-right: 10px;
+						margin-left: 0;
+					}
+				}
+				.fa-reddit {
+					color: #ff4500;
+				}
+				.fa-facebook {
+					color: #3b5998;
+				}
+				.fa-twitter {
+					color: #1da1f2;
 				}
 			}
 		}
 	}
+	.copyright {
+		font-size: 12px;
+		border-top: solid 1px $brand-highlight;
+	}
 }
+

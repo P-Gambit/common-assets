@@ -5,8 +5,12 @@ $menu-bgcolor: #24292d;
 
 
 .navbar {
+	background-color: rgba(1, 6, 13, 0.72);
+	padding: 0;
+	border: none;
+	display: block;
 	a {
-		color: #777777;
+		color: #fff;
 	}
 	.menu_mask {
 		top: 0px;
@@ -18,10 +22,6 @@ $menu-bgcolor: #24292d;
 		position: fixed;
 		opacity: 0;
 	}
-	background-color: rgba(255,255,255, 0.95);
-	padding: 0;
-	border: none;
-	display: block;
 	.icon-menu {
 		display: none;
 		&:hover {
@@ -50,15 +50,14 @@ $menu-bgcolor: #24292d;
 	}
 
 	.navbar-brand {
-		// font-weight: bold;
-		color: #3e3e3e;
+		color: #fff;
 		position: relative;
 		z-index: 150;
 		padding: 10px 10px 10px 20px;
 		margin: 0;
 		font-size: 18px;
 		&:hover {
-			color: #777777;
+			color: #fff;
 		}
 		i {
 			position: relative;
@@ -189,7 +188,7 @@ $menu-bgcolor: #24292d;
 				margin-right: 5px;
 				font-size: 29px;
 				transition: 0.2s;
-				color: #777777;
+				color: #fff;
 				display: block;
 			}
 			.main-menu {

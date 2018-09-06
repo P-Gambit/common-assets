@@ -1,23 +1,39 @@
 <footer class="footer">
-	<ul class="links-foot">
-		<li><a href="<%= ENV['CMS_DOMAIN'] %>/pages/about">About</a></li>
-		<li><a href="<%= ENV['CMS_DOMAIN'] %>/pages/terms-of-service">Terms Of Service</a></li>
-		<li><a href="<%= ENV['CMS_DOMAIN'] %>/pages/privacy">Privacy</a></li>
-		<li><a href="<%= ENV['CMS_DOMAIN'] %>/pages/fees">Fees</a></li>
-		<li><a href="<%= ENV['CMS_DOMAIN'] %>/pages/faq">FAQ</a></li>
-		<li><a href="<%= ENV['CMS_DOMAIN'] %>/pages/blog">Blog</a></li>
-		<li><a href="<%= ENV['CMS_DOMAIN'] %>/pages/security">Security</a></li>
-		<li><a href="<%= ENV['CORE_DOMAIN'] %>/swagger?url=/api/v2/swagger#/deposits">API</a></li>
-		<li><a href="<%= ENV['CMS_DOMAIN'] %>/pages/support">Support</a></li>
-		<li><a href="<%= ENV['STATUS_DOMAIN'] %>">Status</a></li>
-		<li><a href="<%= ENV['CMS_DOMAIN'] %>/pages/contact">Contact</a></li>
-	</ul>
+	<div class='container row mx-auto text-left'>
+		<ul class="col-6 col-sm-3 list-unstyled">
+			<li class="title"><i class="icon-ygt-logo"></i> YugenTrade</li>
+			<li><a href="<%= ENV['CMS_DOMAIN'] %>/pages/about">About</a></li>
+			<li><a href="<%= ENV['CMS_DOMAIN'] %>/pages/terms-of-service">Terms Of Service</a></li>
+			<li><a href="<%= ENV['CMS_DOMAIN'] %>/pages/privacy">Privacy</a></li>
+			<li><a href="<%= ENV['STATUS_DOMAIN'] %>">Status</a></li>
+		</ul>
+		<ul class="col-6 col-sm-3 list-unstyled">
+			<li class="title">Resources</li>
+			<li><a href="<%= ENV['CMS_DOMAIN'] %>/pages/fees">Fees</a></li>
+			<li><a href="<%= ENV['CMS_DOMAIN'] %>/pages/blog">Blog</a></li>
+			<li><a href="<%= ENV['CMS_DOMAIN'] %>/pages/security">Security</a></li>
+			<li><a href="<%= ENV['CORE_DOMAIN'] %>/swagger?url=/api/v2/swagger#/deposits">API</a></li>
+		</ul>
+		<ul class="col-6 col-sm-3 list-unstyled">
+			<li class="title">Help</li>
+			<li><a href="<%= ENV['CMS_DOMAIN'] %>/pages/faq">FAQ</a></li>
+			<li><a href="<%= ENV['CMS_DOMAIN'] %>/pages/support">Support</a></li>
+			<li><a href="<%= ENV['CMS_DOMAIN'] %>/pages/contact">Contact</a></li>
+		</ul>
 
-	<ul class="social-foot">
-		<li><a href="https://www.facebook.com/YugenTrade" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-		<li><a href="https://twitter.com/YugenTrade" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-		<li><a href="https://www.reddit.com/r/YugenTrade" title="Reddit"><i class="fa fa-reddit"></i></a></li>
-	</ul>
-	<div class="clear-fix"></div>
+		<ul class="social-foot col-sm-3 list-unstyled text-sm-right">
+			<li class="title"><i class="icon-ygt-logo"></i> Community</li>
+			<li><a href="https://www.facebook.com/YugenTrade" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="https://twitter.com/YugenTrade" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="https://www.reddit.com/r/YugenTrade" title="Reddit"><i class="fa fa-reddit"></i></a></li>
+			<div class="clearfix"></div>
+			<div class=" pt-3">
+				<p class="copyright m-0 w-100 pt-2">&copy; 2017 - <%= Time.current.year %> YugenTrade.com<br/>
+				All rights reserved</p>
+			</div>
+		</ul>
+	</div>
+	<div class='container row mx-auto text-center'>
+	</div>
 </footer>
 
