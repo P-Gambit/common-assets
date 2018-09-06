@@ -1,0 +1,18 @@
+<li class="nav-item dropdown order-3 active" id="profile">
+	<a class="nav-link dropdown-toggle" href="#" id="profile-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-user"></i><span class="hidden-md"><%= current_user.email %> </span><i class="icon-chevron-down"></i></a>
+	<div class="dropdown-menu" aria-labelledby="profile-dropdown">
+        <%= render partial: 'shared/dropwdown_menu', locals: { link: "#{ENV['CORE_DOMAIN']}/funds", link_name: 'Funds', icon: 'wallet' } %> 
+        <%= render partial: 'shared/dropwdown_menu', locals: { link: "#{ENV['CORE_DOMAIN']}/profile", link_name: 'Profile', icon: 'wrench' } %>
+        <%= render partial: 'shared/dropwdown_menu', locals: { link: "#{ENV['CORE_DOMAIN']}/history/orders", link_name: 'History', icon: 'history' } %>
+		<% if is_admin %>
+            <a class="dropdown-item" href="<%= ENV['CORE_DOMAIN'] %>/uAi1XG2eA66tER9k/admin">
+                <i class="fa fa-dashboard"></i>
+                <span>Admin Panel</span>
+            </a>
+		<% end %>
+		<a class="dropdown-item signout" href="<%= ENV['CORE_DOMAIN'] %>/signout">
+			<i class="icon-signout"></i>
+			<span>Sign out</span>
+		</a>
+	</div>
+</li>

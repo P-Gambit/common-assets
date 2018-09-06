@@ -12,6 +12,7 @@
 		<div class="main-menu panel panel-default scroll float-left">
 			<span class="icon-close"></span>
 			<ul class="navbar-nav ml-auto">
+				<%= render(partial: 'shared/header_profile', locals: { current_user: current_user, is_admin: is_admin}) if current_user %>
 
 				<li class="pages nav-item order-1">
 					<a class="nav-link" href="<%= ENV['CMS_DOMAIN'] %>/pages/support"><i class="icon-lifebuoy"></i><span class="translation_missing" title="translation missing: en.layouts.application.support">Support</span></a>
@@ -31,15 +32,15 @@
 
 				</li>
 
+				<% unless current_user %>
+					<li class="hidden-lg hidden-md pages"><hr>
+						<a href="<%= ENV['CORE_DOMAIN'] %>/auth/barong"><button class="btn btn-danger">Register</button></a>
+						<a href="<%= ENV['CORE_DOMAIN'] %>/auth/barong"><button class="btn btn-success">Sign In</button></a>
+					</li>
+				<% end %>
+
 			</ul>
 		</div>
-
-		<!-- IF !CURRENT_USER -->
-			<p class="navbar-text float-left d-none d-md-block">
-				<a href="/auth/barong"><button class="btn btn-danger">Register</button></a>
-				<a href="/auth/barong"><button class="btn btn-success">Sign In</button></a>
-			</p>
-		<!-- END --------------->
 
 	</div><div class="menu_mask d-none"></div>
 </nav>
