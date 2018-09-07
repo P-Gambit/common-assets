@@ -34,13 +34,15 @@
 
 
 			</ul>
+		</div>
+		<% unless !show_user %>
 			<% unless current_user %>
 				<p class="navbar-text float-left d-none d-md-block">
 					<a href="<%= ENV['CORE_DOMAIN'] %>/auth/barong"><button class="btn btn-danger">Register</button></a>
 					<a href="<%= ENV['CORE_DOMAIN'] %>/auth/barong"><button class="btn btn-success">Sign In</button></a>
 				</p>
 			<% end %>
-		</div>
+		<% end %>
 
 	</div><div class="menu_mask d-none"></div>
 </nav>
