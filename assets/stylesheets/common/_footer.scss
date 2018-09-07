@@ -5,6 +5,7 @@
 	border-top: solid 1px #17a2b8;
 	.icon-ygt-logo {
 		color: $brand-highlight;
+		display: none;
 	}
 	a:hover {
 		color: white;
@@ -26,16 +27,7 @@
 				}
 				.fa {
 					font-size: 1.75em;
-					margin-left: 10px;
-				}
-				@include media-breakpoint-down(sm) {
-					float: none;
-					display: inline;
-					.fa {
-						font-size: 1.75em;
-						margin-right: 10px;
-						margin-left: 0;
-					}
+					margin-left: 15px;
 				}
 				.fa-reddit {
 					color: #ff4500;
@@ -48,9 +40,25 @@
 				}
 			}
 		}
+		@include media-breakpoint-down(sm) {
+			.title {
+				margin-bottom: 8px;
+			}
+			&.social-foot {
+				li {
+					float: none;
+					display: inline;
+					.fa {
+						margin-right: 15px;
+						margin-left: 0;
+					}
+				}
+			}
+		}
 	}
 	.copyright {
-		font-size: 12px;
+		font-size: 10px;
+		color: #929fa5;
 		border-top: solid 1px $brand-highlight;
 	}
 }
