@@ -1,0 +1,50 @@
+// Body Styles
+body,
+html,
+.body {
+  background: #f7f7f7 !important;
+}
+
+.container.header {
+  background: #f7f7f7;
+}
+
+.body-drip {
+  border-top: 8px solid #663399;
+}
+
+// Full Width Headers
+.header {
+  background: $white;
+  .btn {
+    margin: 0!important;
+    float: right;
+    font-size: 14px;
+    border: 0px;
+  }
+}
+
+.header .columns {
+  padding-bottom: 0;
+}
+
+.header p,
+.header a {
+  color: #3f3f3d;
+}
+
+.header .wrapper-inner {
+  padding: 10px;
+}
+
+.header .container {
+  background: transparent;
+}
+
+.wrapper.footer {
+  background: #f7f7f7;
+  a {
+    font-size: 12px;
+    color: #7b7877!important;
+  }
+}
