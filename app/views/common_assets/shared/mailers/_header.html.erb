@@ -3,7 +3,7 @@
 		<row class="collapse">
 			<columns small="6">
 				<a href="<%= ENV['CORE_DOMAIN'] %>">
-					<img alt="YugenTrade" src="<%= URI.join(root_url, image_url('ygn-logotype.png')) %>" width="120" style="width: 100%; max-width: 120px; font-family: sans-serif; color: #ffffff; font-size: 20px; display: block; border: 0px;" border="0"></a>
+					<img alt="YugenTrade" src="<%= URI.join(ENV['CORE_DOMAIN'], image_url('ygn-logotype.png')) %>" width="120" style="width: 100%; max-width: 120px; font-family: sans-serif; color: #ffffff; font-size: 20px; display: block; border: 0px;" border="0"></a>
 			</columns>
 			<columns small="6" class="links">
 				<button class="small radius warning btn" href="<%= ENV['CORE_DOMAIN'] %>trading">Trade</button>
