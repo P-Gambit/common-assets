@@ -9,7 +9,7 @@
 		</ul>
 		<ul class="col-6 col-sm-3 list-unstyled mb-4 mb-sm-3">
 			<li class="title">Resources</li>
-			<li><a href="<%= ENV['CMS_DOMAIN'] %>/pages/fees">Fees</a></li>
+			<li><a href="<%= Setting.get(:CMS_DOMAIN) %>/pages/fees">Fees</a></li>
 			<li><a href="<%= ENV['CMS_DOMAIN'] %>/pages/blog">Blog</a></li>
 			<li><a href="<%= ENV['CMS_DOMAIN'] %>/pages/security">Security</a></li>
 			<li><a href="<%= ENV['CORE_DOMAIN'] %>/swagger?url=/api/v2/swagger#/deposits">API</a></li>
