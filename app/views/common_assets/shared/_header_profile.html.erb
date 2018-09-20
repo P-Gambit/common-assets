@@ -5,7 +5,7 @@
         <%= render partial: 'shared/dropwdown_menu', locals: { link: "#{Setting.get(:CORE_DOMAIN)}/profile", link_name: 'Profile', icon: 'wrench' } %>
         <%= render partial: 'shared/dropwdown_menu', locals: { link: "#{Setting.get(:CORE_DOMAIN)}/history/orders", link_name: 'History', icon: 'history' } %>
 		<% if is_admin %>
-            <a class="dropdown-item" href="<%= Setting.get(:CORE_DOMAIN) %>/uAi1XG2eA66tER9k/admin">
+            <a class="dropdown-item" href="<%= Setting.get(:CORE_DOMAIN) %>/<%= Setting.get(:ADMIN_KEY) %>/admin">
                 <i class="fa fa-dashboard"></i>
                 <span>Admin Panel</span>
             </a>
