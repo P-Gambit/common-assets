@@ -5,7 +5,7 @@
 		<i class="icon-ygt-logo"></i>
 		<span>YugenTrade</span>
 	</a>
-	<a class="trade" href="<%= Setting.get(:CORE_DOMAIN) %>/trading/bchbtc">Trade</a>
+	<a class="trade" href="<%= Setting.get(:CORE_DOMAIN) %>trading/bchbtc">Trade</a>
 
 	<div id="ygn-nav">
 		<i class="icon-menu float-right" aria-controls="ygn-nav" aria-expanded="false" aria-label="Toggle navigation"></i>
@@ -15,7 +15,7 @@
 				<%= render(partial: 'shared/header_profile', locals: { current_user: current_user, is_admin: is_admin}) if current_user %>
 
 				<li class="pages nav-item order-1">
-					<a class="nav-link" href="<%= Setting.get(:CMS_DOMAIN) %>/pages/support"><i class="icon-lifebuoy"></i><span title="Support">Support</span></a>
+					<a class="nav-link" href="<%= Setting.get(:CMS_DOMAIN) %>pages/support"><i class="icon-lifebuoy"></i><span title="Support">Support</span></a>
 				</li>
 				<li id="language" class="nav-item dropdown order-2">
 
@@ -38,8 +38,8 @@
 		<% unless !show_user %>
 			<% unless current_user %>
 				<p class="navbar-text float-left d-none d-md-block">
-					<a href="<%= Setting.get(:CORE_DOMAIN) %>/auth/barong"><button class="btn btn-danger">Register</button></a>
-					<a href="<%= Setting.get(:CORE_DOMAIN) %>/auth/barong"><button class="btn btn-success">Sign In</button></a>
+					<a href="<%= Setting.get(:CORE_DOMAIN) %>auth/barong"><button class="btn btn-danger">Register</button></a>
+					<a href="<%= Setting.get(:CORE_DOMAIN) %>auth/barong"><button class="btn btn-success">Sign In</button></a>
 				</p>
 			<% end %>
 		<% end %>
