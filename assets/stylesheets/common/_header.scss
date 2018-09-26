@@ -33,19 +33,21 @@ $menu-bgcolor: #24292d;
 		}
 	}
 	.trade {
-		margin: 9px 0 5px 14px;
-		padding: 3px 20px;
+		padding: 6px 12px;
 		display: inline-block;
 		border: solid 1px $brand-highlight;
 		background-color: $brand-highlight;
 		color: $nav-bgcolor;
 		border-radius: 2px;
-		top: -2px;
+		top: -3px;
 		position: relative;
 		&:hover {
 			text-decoration: none;
 			background-color: $brand-highlight;
 			color: $nav-bgcolor;
+		}
+		i {
+			display: none;
 		}
 	}
 
@@ -60,6 +62,7 @@ $menu-bgcolor: #24292d;
 			color: #fff;
 		}
 		i {
+			font-size: 21px;
 			position: relative;
 			top: 1px;
 			padding-right: 1px;
@@ -156,7 +159,6 @@ $menu-bgcolor: #24292d;
 				white-space: nowrap;
 				padding: 6px 12px;
 				font-size: 14px;
-				line-height: 1.428571429;
 				border-radius: 2px
 			}
 		}
@@ -331,27 +333,25 @@ $menu-bgcolor: #24292d;
 
 @include media-breakpoint-down(xs) {
 	.navbar {
-		.btn.trade {
-			margin: 0;
-			position: static;
+		.navbar-brand {
+			padding-right: 5px;
+			#ygn-nav .icon-menu {
+				padding: 8px 10px 8px 5px;
+			}
 		}
-	// 	.navbar-brand {
-	// 		padding: 4px 0 0 15px;
-	// 		.icon-ygt-logo {
-	// 			font-size: 28px;
-	// 			top: 4px;
-	// 		}
-	// 		span {
-	// 			display: none;
-	// 		}
-	// 	}
+		.trade {
+			margin-left: 5px;
+		}
 	}
 }
 
-@media (max-width: 420px) {
+@media (max-width: 460px) {
 	.navbar {
+		#ygn-nav .icon-menu {
+			padding: 8px 8px 8px 3px;
+		}
 		.navbar-brand {
-			padding: 4px 0 0 15px;
+			padding: 4px 0 0 11px;
 			.icon-ygt-logo {
 				font-size: 28px;
 				top: 4px;
@@ -359,6 +359,12 @@ $menu-bgcolor: #24292d;
 			span {
 				display: none;
 			}
+		}
+		.trade {
+			margin: 0 0 0 9px;
+			font-size: 14px;
+			background-color: transparent;
+			color: $brand-highlight;
 		}
 	}
 }
