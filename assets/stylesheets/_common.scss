@@ -19,3 +19,15 @@
 a {
     color: #17a2b8;
 }
+
+.page-link {
+	color: #656556;
+	&.active .page-link {
+		color: #1b1f23;
+		background-color: #ffe291;
+		border-color: #ffbc00;
+	}
+	&:hover {
+		color: #1b1f23;
+	}
+}
