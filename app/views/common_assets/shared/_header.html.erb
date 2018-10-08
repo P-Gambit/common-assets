@@ -35,7 +35,7 @@
 
 			</ul>
 		</div>
-		<% unless !show_user %>
+		<% if show_user %>
 			<% unless current_user %>
 				<p class="navbar-text float-left ">
 					<a href="<%= Setting.get(:OAUTH_DOMAIN) %>/accounts/sign_up"><button class="btn btn-danger">Register</button></a>
