@@ -12,7 +12,9 @@
 		<div class="main-menu panel panel-default scroll float-left">
 			<span class="icon-close"></span>
 			<ul class="navbar-nav ml-auto">
+
 				<%= render(partial: 'common_assets/shared/header_profile', locals: { current_user: current_user, is_admin: is_admin, show_user: show_user}) if current_user %>
+
 
 				<li class="pages nav-item order-1">
 					<a class="nav-link" href="<%= Setting.get(:CMS_DOMAIN) %>/pages/support"><i class="icon-lifebuoy"></i><span title="Support">Support</span></a>
@@ -35,10 +37,10 @@
 
 			</ul>
 		</div>
-		<% unless !show_user %>
+		<% if show_user %>
 			<% unless current_user %>
 				<p class="navbar-text float-left ">
-					<a href="<%= Setting.get(:CORE_DOMAIN) %>/auth/barong"><button class="btn btn-danger">Register</button></a>
+					<a href="<%= Setting.get(:OAUTH_DOMAIN) %>/accounts/sign_up"><button class="btn btn-danger">Register</button></a>
 					<a href="<%= Setting.get(:CORE_DOMAIN) %>/auth/barong"><button class="btn btn-success">Sign In</button></a>
 				</p>
 			<% end %>
