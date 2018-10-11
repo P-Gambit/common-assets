@@ -12,7 +12,7 @@
 		<div class="main-menu panel panel-default scroll float-left">
 			<span class="icon-close"></span>
 			<ul class="navbar-nav ml-auto">
-				<%= render(partial: 'shared/header_profile', locals: { current_user: current_user, is_admin: is_admin}) if current_user %>
+				<%= render(partial: 'common_assets/shared/header_profile', locals: { current_user: current_user, is_admin: is_admin, show_user: show_user}) if current_user %>
 
 				<li class="pages nav-item order-1">
 					<a class="nav-link" href="<%= Setting.get(:CMS_DOMAIN) %>/pages/support"><i class="icon-lifebuoy"></i><span title="Support">Support</span></a>
