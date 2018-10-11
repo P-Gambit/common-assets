@@ -21,6 +21,11 @@ html,
     float: right;
     font-size: 14px;
     border: 0px;
+    a {
+      color: #000;
+      padding: 2px 12px!important;
+      font-weight: normal;
+    }
   }
 }
 
@@ -39,6 +44,26 @@ html,
 
 .header .container {
   background: transparent;
+}
+
+.callout-inner p {
+  margin-bottom: 0;
+}
+
+.callout-inner.warning {
+  color: darken($warning-color, 40%)!important;
+}
+
+small {
+  color: #989898;
+}
+
+.outro {
+  p {
+    font-size: 10px;
+    color: #989898;
+    margin: 0;
+  }
 }
 
 .wrapper.footer {
