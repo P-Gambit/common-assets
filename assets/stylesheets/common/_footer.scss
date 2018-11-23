@@ -64,3 +64,17 @@
 	}
 }
 
+.cookies-eu {
+	border-top: 1px solid maroon;
+	background: #ff8e8e;
+	color: maroon;
+	z-index: 1000;
+	.cookies-eu-button-holder .cookies-eu-ok {
+		background: maroon;
+		padding: 2px 20px;
+	}
+	a {
+		color: #016b7a;
+	}
+}
+
