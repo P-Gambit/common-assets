@@ -87,3 +87,9 @@
 	}
 }
 
+@include media-breakpoint-down(md) {
+	.zammad-chat.zammad-chat-is-open {
+		padding-top: 46px;
+	}
+}
+
