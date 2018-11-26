@@ -1,0 +1,71 @@
+
+
+<nav class="navbar navbar-expand-md fixed-top">
+	<a class="navbar-brand" href="<%= Setting.get(:OAUTH_DOMAIN) %>">
+		<i class="icon-ygt-logo"></i>
+		<span>YugenTrade</span>
+	</a>
+
+	<div id="ygn-nav">
+		<i class="icon-menu float-right" aria-controls="ygn-nav" aria-expanded="false" aria-label="Toggle navigation"></i>
+		<div class="main-menu panel panel-default scroll float-left">
+			<span class="icon-close"></span>
+			<ul class="navbar-nav ml-auto">
+
+				<%= render(partial: 'common_assets/shared/header_profile', locals: { current_user: current_user, is_admin: is_admin, show_user: show_user}) if current_user %>
+
+
+				<li class="pages nav-item order-1">
+					<a class="nav-link" href="<%= Setting.get(:OAUTH_DOMAIN) %>"><i class="fa fa-angle-double-left"></i><span title="Support">Back to YugenTrade</span></a>
+				</li>
+				<li id="language" class="nav-item dropdown order-2">
+
+					<a class="nav-link dropdown-toggle" href="#" id="language-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="icon-earth"></i>en
+						<i class="icon-chevron-down"></i>
+					</a>
+
+					<ul class="dropdown-menu" aria-labelledby="language-dropdown">
+						<a class="dropdown-item" href="?lang=en">
+							en
+						</a>
+					</ul>
+
+				</li>
+
+
+			</ul>
+		</div>
+		<% if show_user %>
+			<% unless current_user %>
+				<p class="navbar-text float-left ">
+					<a href="<%= Setting.get(:OAUTH_DOMAIN) %>/accounts/sign_up"><button class="btn btn-danger">Register</button></a>
+					<a href="<%= Setting.get(:CORE_DOMAIN) %>/auth/barong"><button class="btn btn-success">Sign In</button></a>
+				</p>
+			<% end %>
+		<% end %>
+	</div>
+	<div class="menu_mask d-none"></div>
+</nav>
+
+
+
+<script>
+
+	var main = function() {
+		$('.icon-menu').click(function() {
+			$('.main-menu').animate({right:'0px'}, 200);
+			$('.menu_mask').animate({opacity:1}, 350).removeClass('d-none');
+			$('.navbar-account').removeClass('menu-closed').addClass('menu-open');
+		});
+		$('.icon-close').click(function() {
+			$('.main-menu').animate({right:'-285px'}, 200);
+			$('.menu_mask').animate({opacity:0}, 200).addClass('d-none');
+			$('.navbar-account').removeClass('menu-open').addClass('menu-closed');
+		});
+
+	};
+
+	$(document).ready(main);
+
+</script>
